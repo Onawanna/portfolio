@@ -1,6 +1,10 @@
-body{
-    background-color:#FECC66;
+
+.navbar a {
+	list-style-type: none;
+	background-color: beige
+
 }
+
 
 li{
 	text-decoration: none;
@@ -8,6 +12,18 @@ li{
 	background-color: white;
 	color: black;
 }
+
+
+.navbar a:hover {
+	background: lightcyan;
+	color: black
+}
+
+#portpic{
+	height: 200px;
+	width: 200px;
+}
+
 
 
 
