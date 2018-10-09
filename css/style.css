@@ -1,28 +1,96 @@
 
+*{
+	background-color: white;
+	margin: 0;
+	padding:10px;
+	text-align: center;
+	color: black;
+	
+}
+.paratext {
+	background-image: url("../Portfolio_Images/background1.jpg");
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	justify-content: space-around;
+	top: 0;
+	background-image: url("../Portfolio_Images/background2.jpg");
+ }
+
 .navbar a {
 	list-style-type: none;
-	background-color: beige
-
+	margin-left: auto;
+	margin-right: auto;
 }
 
-
-li{
+.navbar li{
 	text-decoration: none;
 	display:inline;
-	background-color: white;
-	color: black;
+	font-size: 20px;
+
 }
 
-
 .navbar a:hover {
-	background: lightcyan;
-	color: black
+	transform: rotate(45deg);
+	transition-property: color, transform;
+	transition-duration: 2s;
+	background-color: peachpuff;
+	width: 500px;
+}
+
+.navtext {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.maintitle {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px
+}
+
+.titletext{
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+
+.paratext {
+	font-family: 'Fanwood Text', serif;
+	font-size: 20px
+}
+
+.mainpic {
+	padding: 30px;
 }
 
 #portpic{
-	height: 200px;
-	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 25%;
+
 }
+
+
+.grid-container {
+	
+	grid-template-columns: auto auto auto;
+	justify-content: space-evenly;
+}
+.grid-container > div {
+	margin: 0%;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 30px;
+
+}
+
+
+
+
+
 
 
 
