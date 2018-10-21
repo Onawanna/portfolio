@@ -1,48 +1,98 @@
-
-*{
-	background-color: white;
+* {
 	margin: 0;
-	padding:10px;
-	text-align: center;
-	color: black;
-	
+	padding: 0;
+
 }
-.paratext {
-	background-image: url("../Portfolio_Images/background1.jpg");
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 500px 500px 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+	"header header header header"
+	". mainpic mainpic ."
+	". indextext indextext .";
+	justify-items: center; 
+	background-image: url("../Portfolio_Images/background5.jpg");
+	
+	
 }
 
 .header {
-	width: 100%;
+	grid-area: header;
 	position: fixed;
-	text-align: center;
-	justify-content: space-around;
-	top: 0;
-	background-image: url("../Portfolio_Images/background2.jpg");
- }
+	left: 25%;
+	background-image: url("../Portfolio_Images/background6.jpg");
+	padding-top: 0px;
+	padding-left: 60px;
+	
+	 
+	
+}
 
-.navbar a {
-	list-style-type: none;
+.mainpic {
+	grid-area: mainpic;
+	padding: 30px 80px;
+	text-align: center;
+	background-color: white;
+	
+}
+
+.indextext {
+	grid-area: indextext;
+	padding-top: 10px; 
+	padding-bottom: 50px;
+	padding-left: 70px;
+	padding-right: 70px;
+	text-align: center;
+	background-image: url("../Portfolio_Images/background6.jpg");
+	
+}
+
+#portpic{
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	height: auto;
+	width: 25%;
+
 }
 
 .navbar li{
-	text-decoration: none;
+	color:black; 
+	text-decoration-line: none;
 	display:inline;
 	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-right: 75px;
+	
+}
+.navbar a {
+	text-decoration-line: none;
+	color: black;
+}
 
+.navbar button {
+	background-color: white;
+	width: 100px;
+	border-radius: 12px;
+}
+
+.titletext {
+	align-items: center;
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
 }
 
 .navbar a:hover {
 	transform: rotate(45deg);
 	transition-property: color, transform;
 	transition-duration: 2s;
-	background-color: peachpuff;
+	background-color: rgb(235, 174, 174);
 	width: 500px;
-}
+		
 
-.navtext {
-	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .maintitle {
@@ -59,40 +109,4 @@
 	font-family: 'Fanwood Text', serif;
 	font-size: 20px
 }
-
-.mainpic {
-	padding: 30px;
-}
-
-#portpic{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-	width: 25%;
-
-}
-
-
-.grid-container {
-	
-	grid-template-columns: auto auto auto;
-	justify-content: space-evenly;
-}
-.grid-container > div {
-	margin: 0%;
-	text-align: center;
-	padding: 10px 0;
-	font-size: 30px;
-
-}
-
-
-
-
-
-
-
-
-
 
