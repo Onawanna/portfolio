@@ -1,112 +1,213 @@
-* {
-	margin: 0;
-	padding: 0;
 
+*{
+	text-decoration: none;
+	margin: 0.5%;
+	padding:0;
 }
 
-.grid-container {
-	display: grid;
-	grid-template-columns: 1fr 500px 500px 1fr;
-	grid-template-rows: auto auto auto;
-	grid-template-areas: 
-	"header header header header"
-	". mainpic mainpic ."
-	". indextext indextext .";
-	justify-items: center; 
-	background-image: url("../Portfolio_Images/background5.jpg");
-	
-	
+body {
+	background-color: rgb(255, 254, 254); 
 }
 
-.header {
-	grid-area: header;
-	position: fixed;
-	left: 25%;
-	background-image: url("../Portfolio_Images/background6.jpg");
-	padding-top: 0px;
-	padding-left: 60px;
-	
-	 
+header {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	vertical-align: center;
 	
 }
 
-.mainpic {
-	grid-area: mainpic;
-	padding: 30px 80px;
-	text-align: center;
-	background-color: white;
-	
-}
-
-.indextext {
-	grid-area: indextext;
-	padding-top: 10px; 
-	padding-bottom: 50px;
-	padding-left: 70px;
-	padding-right: 70px;
-	text-align: center;
-	background-image: url("../Portfolio_Images/background6.jpg");
-	
-}
-
-#portpic{
+header nav ul {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-	width: 25%;
-
-}
-
-.navbar li{
-	color:black; 
-	text-decoration-line: none;
-	display:inline;
-	font-size: 20px;
-	font-family: 'Source Sans Pro', sans-serif;
-	margin-right: 75px;
-	
-}
-.navbar a {
-	text-decoration-line: none;
-	color: black;
-}
-
-.navbar button {
-	background-color: white;
-	width: 100px;
-	border-radius: 12px;
-}
-
-.titletext {
-	align-items: center;
+	margin: 0 auto;
+	width: fit-content;
 	text-align: center;
-	margin: 5px;
-	padding: 5px;
-}
-
-.navbar a:hover {
-	transform: rotate(45deg);
-	transition-property: color, transform;
-	transition-duration: 2s;
-	background-color: rgb(235, 174, 174);
-	width: 500px;
-		
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border: #111 solid 5px;
+	width: 96%;
+	height: auto;
 
 }
 
-.maintitle {
+header nav ul li {
+	display: inline;
+	/* float: left; */
+	list-style: none;
+	padding: 3px 3px;
+	width: 45%;	
+	
+
+}
+
+header nav ul li a {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 30px
+	font-size: 15px;
+	font-weight: 700;
+	color: #111
+
+}
+.banner {
+	width: 100%;
+	height: 90px;
+	background-image: url("../Portfolio_Images/background5.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	/* padding-left: 10px; */
 }
 
-.titletext{
+.banner h1 {
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(250, 243, 243);
+	text-shadow: 10 10 10 #181717;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	margin: 0;
+}
+
+.main_content {
+	width: 100%;
+	height: calc(100vh - 90px);
+	line-height: 25px;
+	margin: 0.5%;
+}
+
+.introtext, .careertext {
+	/* max-width: 500px; */
+	/* border: 5px solid black; */
+	/* display: block; */
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: 'Source Sans Pro', sans-serif;
+
+} 
+
+.introtext h2, .careertext h2 {
+	font-size: 1.5em;
+	font-weight: 600;
 	
 }
 
-.paratext {
-	font-family: 'Fanwood Text', serif;
-	font-size: 20px
+.careertext h2 {
+	border: 2px solid black;
+	margin: 2%;
 }
+
+.introtext p, .careertext p {
+	font-size: 20px;
+	font-weight: 500;
+	padding-top: 10px;
+	
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 90%;
+	margin-left: 4%;
+	column-gap: 1%;
+	grid-row-gap: 1%;
+	width: 96%;
+	}
+
+.container div {
+	height: 15vh;
+	border: 2px solid black;
+	text-align: center;
+	padding-top: 10%;
+	padding-left: 2%;
+	padding-right: 2%;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+
+	 
+}
+.container div a {
+	font-size: 1.5em;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	/* text-shadow: 2px 2px 2px black; */
+	font-weight: 700;	
+	text-transform: uppercase;
+}
+
+.pagetitle {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	padding: 2%;
+}
+
+@media screen and (min-width: 800px) {
+	
+.container{
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	column-gap: 1%;
+	grid-row-gap: 1%;
+	width: 90%;
+	position: relative;
+	}
+
+.first {
+	background-image: url("../Portfolio_Images/Tumblr_Logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 25px 0;
+	background-position: left bottom;
+}
+.second {
+	background-image: url("../Portfolio_Images/Context_Inquiry_water.PNG");
+	background-repeat: no-repeat;
+	padding: 25px 0;
+	background-position: top;
+	
+}
+.third {
+	background-image: url("../Portfolio_Images/Story_boarding.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 25px 0;
+
+}
+
+.fourth {
+	background-image: url("../Portfolio_Images/LynkShop_Webcover.PNG");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 25px 0;
+	background-position: left top;
+}
+
+.container div {
+	padding: 9%;
+	text-align: center;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.315);
+
+}
+.container div a {
+	font-size: 1.5em;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+	font-weight: 700;	
+	text-transform: uppercase;
+	/* text-shadow: 12 12 12 #f8f8f8; */
+}
+
+header nav ul li {
+	padding: 3%;	
+}
+}
+
+
+
 

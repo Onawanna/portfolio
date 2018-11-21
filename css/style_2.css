@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 500px 500px 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+	"header header header header"
+	". mainpic mainpic ."
+	". indextext indextext .";
+	justify-items: center; 
+	background-image: url("../Portfolio_Images/background5.jpg");
+	
+	
+}
+
+.header {
+	grid-area: header;
+	position: fixed;
+	left: 25%;
+	background-image: url("../Portfolio_Images/background6.jpg");
+	padding-top: 0px;
+	padding-left: 60px;
+	
+	 
+	
+}
+
+.mainpic {
+	grid-area: mainpic;
+	padding: 30px 80px;
+	text-align: center;
+	background-color: white;
+	
+}
+
+.indextext {
+	grid-area: indextext;
+	padding-top: 10px; 
+	padding-bottom: 50px;
+	padding-left: 70px;
+	padding-right: 70px;
+	text-align: center;
+	background-image: url("../Portfolio_Images/background6.jpg");
+	
+}
+
+#portpic{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	max-width: 25%;
+
+}
+
+.navbar li{
+	color:black; 
+	text-decoration-line: none;
+	display:inline;
+	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-right: 75px;
+	
+}
+.navbar a {
+	text-decoration-line: none;
+	color: black;
+}
+
+.navbar button {
+	background-color: white;
+	width: 100px;
+	border-radius: 12px;
+}
+
+.titletext {
+	align-items: center;
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+}
+
+.navbar a:hover {
+	transform: rotate(45deg);
+	transition-property: color, transform;
+	transition-duration: 2s;
+	background-color: rgb(235, 174, 174);
+	width: 500px;
+		
+
+}
+
+.maintitle {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px
+}
+
+.titletext{
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+
+.paratext {
+	font-family: 'Fanwood Text', serif;
+	font-size: 20px
+}
+
+@media only screen and (max-width: 600px) {
+	background-color: antiquewhite;
+}
+
