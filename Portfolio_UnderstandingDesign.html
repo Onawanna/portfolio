@@ -8,49 +8,101 @@
     <link rel="stylesheet" type="text/css" href="css/defaultStyle.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fanwood+Text%7cSource+Sans+Pro" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("i").click(function(){
+            $(".p1").toggle();
+        });
+    });
+    </script>
+
+
+
 </head>
-<body> 
-<header class="navbar">
+<body>
+<a class="skip-main" href="#maincontent">Jump to content</a> 
+<div class="sticky_head"> 
+<header>
         <nav>
-            <ul class ="titletext">
-                    <li><a href = "index.html">Home</a></li> 
-                    <li><a href = "projects_mainpage.html">Portfolio</a></li>
-                    <li><a href = "Portfolio_Resume.html">Resume</a></li>
-                    <li><a href = "portfolio_contactme.html">Contact</a></li>
+            <ul>
+                <li><a href = "index.html">Home</a></li> 
+                <li><a class= "current" href = "projects_mainpage.html">Portfolio</a></li>
+                <li><a href = "Portfolio_Resume.html">Resume</a></li>
+                <li><a href = "portfolio_contactme.html">Contact</a></li>
             </ul>
         </nav>
         
 </header>
 
-<main> 
-    <h1 class="maintitle">Understanding the Design Process</h1>
-    
-    <h3 class= "titletext">Challenge</h3>
-        <p class="paratext"> Develop a protype for an app that tackles an issue in your community. Use the tools in the design process to develop your idea from sketches to an interactive digital prototype.</p>
-    <h3 class= "titletext">Problem Statement</h3>
+<div class = "banner"> 
+    <h1> Understanding the Design Process</h1>
+</div>
+
+</div>
+<main id="maincontent">
+    <div class = "page_content">         
+    <h2 class= "titletext">Challenge</h2> <i class=" arrows up down"></i>
+        <p class="paratext p1"> Develop a prototype for an app that tackles an issue in your community. Use the tools in the design process to develop your idea from sketches to an interactive digital prototype.</p>
+    <h2 class= "titletext">Problem Statement</h2>
         <p class="paratext">Although the University of Michigan is a community of over 44,000, students often isolate themselves into smaller communities, bubbles, that impede them from meeting peers outside their immediate circles – departments, sports teams, classes. How do you facilitate introductions and encounters among students from different disciplines living on a large campus?</p>
-    <h3 class= "titletext">Iterative Design Process</h3>
+    <h2 class= "titletext">Iterative Design Process</h2>
         <h4 class= "titletext">High-Level Sketches </h4>
             <p class="paratext"> Early in the design process I brainstormed eight unique poossible solutions to my problem statement. Ensuring I had a diverse set of ideas.</p>
+            <div class="sketch1">
                 <img src="Portfolio_Images/Highlevelsketch_1.jpg" alt="">
+            </div>
+            <div class= "sketch2"> 
                 <img src="Portfolio_Images/Highlevelsketch_2.jpg" alt="">
+            </div>
+
         <h4 class= "titletext">Storyboard Designs </h4>
             <p class="paratext">I developed a storyboard expanding on each of my high-level sketches to show the problem, the user's context, their constraints, and the actions they would have to take for each of the proposed solutions.</p>
+
+            <div class="storyboarding"> 
                 <img src="Portfolio_Images/Story_boarding.jpg" alt="">
+            </div>
+            
         <h4 class= "titletext">Personas </h4>
             <p class="paratext">I developed 2 pro personas and 1 anti-persona of users that might use my app imagining their needs, motivations and skills.</p>
+
+            <div class="personas"> 
                 <img src="Portfolio_Images/Personas.PNG" alt="">
+            </div>
+
         <h4 class= "titletext">Story Maps </h4>
             <p class="paratext">With the personas I developed in mind, I created a story map of the flow of tasks and activities my users would engage in when using my app to gain context of what their experiences meeting their goals on the app would be like. </p>
+
+            <div class="storymapping"> 
                 <img src="Portfolio_Images/Storymapping.PNG" alt="">
+            </div>
+
         <h4 class= "titletext">Wireframes </h4>
             <p class="paratext">I created low fidelity wireframes showing the flow and interactions I envisioned for the app.</p>
+
+            <div class="wiref_1"> 
                 <img src="Portfolio_Images/wireframe_1.jpg" alt="">
+            </div>
+            <div class="wiref_2"> 
                 <img src="Portfolio_Images/wireframe_2.jpg" alt="">
+            </div>
+
         <h4 class= "titletext">Digital Prototype </h4>
             <p class="paratext">I created a digital and interactive prototype of the app using Figma.</p>
+
+            <div class="prototype"> 
                 <img src="Portfolio_Images/Digital_PrototypeScreens.PNG" alt="">
+            </div>
+    </div>
 </main>
+<footer> 
+        <h4> Contact Me: 
+                <a aria-label = "Go to LinkedIn page" href="https://www.linkedin.com/in/marble-karuu">LinkedIn<i class="fab fa-linkedin fa-lg"> </i> </a>           
+                <a aria-label = "Send an email" href="mailto:mkaruu@umich.edu">Email<i class="fas fa-envelope fa-lg"></i> </a>
+        </h4>
+</footer>
+
 
 </body>
 </html>

@@ -9,50 +9,88 @@
     <link rel="stylesheet" type="text/css" href="css/defaultStyle.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fanwood+Text%7cSource+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-<div class = "grid-container"> 
+<!-- <div class = "grid_container">  -->
+<a class="skip-main" href="#maincontent">Jump to content</a> 
 
- 
-<header class="header">
+<div class="sticky_head"> 
+    <header class= "fix_header">
+            <nav>
+                <ul>
+                    <li><a class= "current" href = "index.html">Home</a></li> 
+                    <li><a href = "projects_mainpage.html">Portfolio</a></li>
+                    <li><a href = "Portfolio_Resume.html">Resume</a></li>
+                    <li><a href = "portfolio_contactme.html">Contact</a></li>
+                </ul>
+            </nav>  
+    
+    </header>
 
-    <nav class="navbar">
-        <ul class="titletext">
-            <li><a href = "index.html">Home</a></li>
-            <li><a href = "projects_mainpage.html">Portfolio</a></li>
-            <li><a href = "Portfolio_Resume.html">Resume</a></li>
-            <li><a href = "portfolio_contactme.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main> 
-<div class= "main_content"> 
-    <div class = "banner"> 
-        <h1> Mixed Methods UX Reasercher</h1>
-    </div> 
-
-    <div class="introtext">            
-        <h2 class="titletext">Hey there, my name is Marble.</h2>
-        <div id= "main_image">     
-            <img id="portpic" src ="Portfolio_Images/profile_pic2.jpg" alt="Picture of Marble">
-        </div>
-        <p class="paratext">I am a dual master degree student at the University of Michigan studying public policy and information science.</p>
-    </div>
-
-    <div class= "careertext">
-        <h2 >Professional Goals: Produce research with impact!</h2>         
-        <p class="paratext">I believe in combining curiosity with impact. </p> 
-        <p>I want to conduct research where findings and recommendations have local and global impact on everyday lives and livelihoods!</p>
-    </div> 
+     
+<div class = "banner"> 
+    <h1 id="page_title">Mixed Methods UX Researcher </h1>
+</div>
 
 </div>
+
+<main id = "maincontent"> 
+<div class= "main_content" >
+        <div class="introtext">            
+            <!-- <h2 >Hey there, my name is Marble.</h2> -->
+            <div id= "main_image">     
+                <img id="portpic" src ="Portfolio_Images/profile_pic2.jpg" alt="Picture of Marble">
+            </div>
+            <p class="paratext">Currently, I am a dual master degree student at the University of Michigan studying public policy and information science. I will be graduating in 2019!</p>
+        </div>
+
+        <div class= "careertext">
+            <h2 >Professional Goals: Produce research with impact!</h2>         
+            <p class="paratext">I believe in combining curiosity with impact. </p> 
+            <p>I want to conduct research where findings and recommendations have local and global impact on everyday lives and livelihoods!</p>
+        </div> 
+
+    </div>
 <!-- This div ends the main content div -->
 </main>
 
-</div> 
+
+<!-- </div>  -->
 <!-- This ends the grid container div -->
+
+<!-- <footer> 
+        <h4> Contact Me:         
+                <a aria-label = "Go to LinkedIn page" href="https://www.linkedin.com/in/marble-karuu">LinkedIn<i class="fab fa-linkedin fa-lg"> </i> </a>           
+                <a aria-label = "Send an email" href="mailto:mkaruu@umich.edu">Email<i class="fas fa-envelope fa-lg"></i> </a>
+        </h4>
+</footer> -->
 </body>
 
 </html>
+<!-- // Modified code from https://safi.me.uk/typewriterjs/ -->
+<script src="js/core.js"></script>
+<script>
+var app = document.getElementById('page_title');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Hey there, my name is Marble')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('I am a reseacher')
+    .pauseFor(2000)
+    .deleteChars(9)
+    .typeString('Mixed Methods UX Researcher!')
+    .pauseFor(3000)
+    .start()
+    var final = "Mixed Methods UX Researcher!";
+    final
+</script>
+
+

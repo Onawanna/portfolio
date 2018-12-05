@@ -3,19 +3,33 @@
 	text-decoration: none;
 	margin: 0.5%;
 	padding:0;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
 	background-color: rgb(255, 254, 254); 
 }
 
+/* .fix_header {
+	position: fixed;
+	top: 0%;
+} */
+
 header {
 	background-color: #fff;
-	width: 100%;
+	width: 97.5%;
 	height: 100%;
 	text-transform: uppercase;
+	margin: 0%;
 	vertical-align: center;
+	border: #111 solid 4px;
+	/* position: sticky;
+	top: 0 */
 	
+}
+.sticky_head {
+	position: sticky;
+	top:0;
 }
 
 header nav ul {
@@ -23,9 +37,7 @@ header nav ul {
 	margin: 0 auto;
 	width: fit-content;
 	text-align: center;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	border: #111 solid 5px;
+	padding: 2%;
 	width: 96%;
 	height: auto;
 
@@ -33,29 +45,34 @@ header nav ul {
 
 header nav ul li {
 	display: inline;
-	/* float: left; */
 	list-style: none;
-	padding: 3px 3px;
-	width: 45%;	
-	
-
+	padding: 1.5px 5px;
+	/* width: 45%;	 */
 }
 
 header nav ul li a {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 15px;
+	font-size: 1em;
 	font-weight: 700;
-	color: #111
+	color: #111;
 
 }
+
+.current {
+	background-color: rgb(243, 23, 78);
+
+}
+
+
 .banner {
-	width: 100%;
+	width: 97.5%;
 	height: 90px;
 	background: black;
 	background-image: url("../Portfolio_Images/background5.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	border: #111 solid 4px;
 	/* padding-left: 10px; */
 }
 
@@ -73,13 +90,13 @@ header nav ul li a {
 }
 
 .main_content {
-	width: 100%;
+	width: 94%;
 	height: calc(100vh - 90px);
 	line-height: 25px;
 	margin: 0.5%;
 }
 
-.introtext, .careertext {
+.introtext, .careertext, h2 .title {
 	/* max-width: 500px; */
 	/* border: 5px solid black; */
 	/* display: block; */
@@ -87,15 +104,15 @@ header nav ul li a {
 	text-align: center;
 	padding-left: 5%;
 	padding-right: 5%;
-	font-family: 'Source Sans Pro', sans-serif;
-
+	font-size: 1.5em;
+	font-weight: 600;
 } 
 
-.introtext h2, .careertext h2 {
+/* .introtext h2, .careertext h2, {
 	font-size: 1.5em;
 	font-weight: 600;
 	
-}
+} */
 
 .careertext h2 {
 	border: 2px solid black;
@@ -131,7 +148,6 @@ header nav ul li a {
 }
 .container div a {
 	font-size: 1.5em;
-	font-family: 'Source Sans Pro', sans-serif;
 	color: white;
 	/* text-shadow: 2px 2px 2px black; */
 	font-weight: 700;	
@@ -139,7 +155,6 @@ header nav ul li a {
 }
 
 .pagetitle {
-	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
 	padding: 2%;
 }
@@ -148,7 +163,102 @@ iframe {
 	width: 95%;
 	height: 95vh;
 }
-	
+
+footer {
+	width: 94%;
+	padding: 2.5%;
+}
+
+footer h4 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Tumblr page css */
+.tumblr_logo, .analyis_pic, .analysis_pic2, .ci_logo1, .ci_wall1, .ci_wall2, .ci_website, .sketch1, .sketch2, .storymapping, .wiref_1, .wiref_2, .prototype, .storyboarding, .personas, .lynkshop_web, .lynkshop {
+	margin: 0 auto;
+	padding: 1%;
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 7%;
+}
+
+.tumblr_logo img, .analyis_pic img, .analysis_pic2 img, .ci_logo1 img, .ci_wall1 img, .ci_wall2 img, .ci_website img, .sketch1 img, .sketch2 img, .storymapping img, .wiref_1 img, .wiref_2 img, .prototype img, .storyboarding img, .personas img, .lynkshop_web img, .lynkshop img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.titletext {
+	color:black;
+	font-size: 1.5em;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.paratext, .paratext li {
+	font-size: 17px;
+	font-weight: 500;
+	padding: 1.5%;
+	list-style: none;
+}
+
+.page_content {
+	width: 94%;
+	/* height: calc(100vh - 90px); */
+	line-height: 25px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* 
+This code was adapted from https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ */
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid blue;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+/* This code is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows */
+
+.arrows {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 
 @media screen and (min-width: 800px) {
 	
@@ -159,6 +269,8 @@ iframe {
 	grid-row-gap: 1%;
 	width: 90%;
 	position: relative;
+	justify-items: center;
+	align-items: center;
 	}
 
 .first {
