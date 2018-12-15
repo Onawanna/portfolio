@@ -176,9 +176,12 @@ footer {
 	padding: 2.5%;
 }
 
-footer h4 {
+footer p {
 	margin: 0 auto;
 	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1em;
 }
 
 /* Tumblr page css */
@@ -262,6 +265,7 @@ a.skip-main:focus, a.skip-main:active {
 	}
 
 .first {
+	background: black;
 	background-image: url("../Portfolio_Images/Tumblr_Logo.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -269,8 +273,11 @@ a.skip-main:focus, a.skip-main:active {
 	padding: 25px 0;
 	/* background-position: left top; */
 	background-position: left bottom;
+	
 }
 .second {
+	background: black;
+	background: white;
 	background-image: url("../Portfolio_Images/Context_Inquiry_water.PNG");
 	background-repeat: no-repeat;
 	padding: 25px 0;
@@ -278,6 +285,7 @@ a.skip-main:focus, a.skip-main:active {
 	
 }
 .third {
+	background: black;
 	background-image: url("../Portfolio_Images/Story_boarding.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -287,6 +295,7 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 .fourth {
+	background: black;
 	background-image: url("../Portfolio_Images/LynkShop_Webcover.PNG");
 	background-repeat: no-repeat;
 	background-position: center;

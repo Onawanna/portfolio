@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me</title>
 	<link rel="stylesheet" type="text/css" href="css/defaultStyle.css">
-	<link rel="stylesheet" type="text/css" href="css_lightbox/style_portfolio.css">
     <link rel="stylesheet" type="text/css" href="css_lightbox/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fanwood+Text%7cSource+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -15,6 +14,7 @@
 </head>
 
 <body>
+<a class="skip-main" href="#maincontent">Jump to content</a> 
 <div class=sticky_head> 
 <header class="navbar">
         <a class="skip-main" href="#maincontent">Jump to content</a> 
@@ -67,49 +67,57 @@
 		<a href="images/Guangzhou3.jpg" class = "mix china" data-lightbox="image-3" data-title="China Pictures 1"> <img src= "images/Guangzhou3.jpg" alt ="Guangzhou Boatride"></a>
 	</div>
 </main>
+<footer> 
+<p> Contact Me:         
+	<a aria-label = "Go to LinkedIn page" href="https://www.linkedin.com/in/marble-karuu"> LinkedIn <i class="fab fa-linkedin fa-lg"> </i> </a>           
+	<a aria-label = "Send an email" href="mailto:mkaruu@umich.edu">   Email<i class="fas fa-envelope fa-lg"></i> </a>
+</p>
+</footer>
 	<script src="js/lightbox.js"></script>
 </body>
+
+<script src="js/mixitup.js"></script>
+
+<script>
+	var containerEl = document.querySelector('.container');
+
+	var mixer = mixitup(containerEl);
+</script>
+
+<script>
+// This code was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown 
+	
+	// Set the date we're counting down to
+	var countDownDate = new Date("May 5, 2019 15:00:25").getTime();
+	
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+	
+	  // Get todays date and time
+	  var now = new Date().getTime();
+		
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+		
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+	  // Output the result in an element with id="demo"
+	  document.getElementById("countdown").innerHTML = days + " DAYS " + hours + " HOURS "
+	  + minutes + " MINUTES " + seconds + " SECONDS ";
+		
+	  // If the count down is over, write some text 
+	  if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("countdown").innerHTML = "GRADUATED!";
+	  }
+	}, 1000);
+	</script>
 </html>
 
 
-	<script src="js/mixitup.js"></script>
 
-	<script>
-		var containerEl = document.querySelector('.container');
-
-		var mixer = mixitup(containerEl);
-	</script>
-
-<script>
-	// This code was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown 
-		
-		// Set the date we're counting down to
-		var countDownDate = new Date("May 5, 2019 15:00:25").getTime();
-		
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-		
-		  // Get todays date and time
-		  var now = new Date().getTime();
-			
-		  // Find the distance between now and the count down date
-		  var distance = countDownDate - now;
-			
-		  // Time calculations for days, hours, minutes and seconds
-		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-			
-		  // Output the result in an element with id="demo"
-		  document.getElementById("countdown").innerHTML = days + " DAYS " + hours + " HOURS "
-		  + minutes + " MINUTES " + seconds + " SECONDS ";
-			
-		  // If the count down is over, write some text 
-		  if (distance < 0) {
-			clearInterval(x);
-			document.getElementById("countdown").innerHTML = "GRADUATED!";
-		  }
-		}, 1000);
-		</script>
 		
