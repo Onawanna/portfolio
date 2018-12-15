@@ -11,6 +11,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <script>
+                $(".first").click(function(){
+                    window.location = $(this).find("a:first").attr("href");
+                    return false;
+                });
+            
+                $(".second").click(function(){
+                    window.location = $(this).find("a:first").attr("href");
+                    return false;
+                });
+                $(".third").click(function(){
+                    window.location = $(this).find("a:first").attr("href");
+                    return false;
+                });
+                $(".fourth").click(function(){
+                    window.location = $(this).find("a:first").attr("href");
+                    return false;
+                });
+        
+                // This code was adapted from https://css-tricks.com/snippets/jquery/make-entire-div-clickable/
+            </script>
 </head>
 
 <body> 
@@ -61,24 +82,6 @@
 </footer>
 
 </body>
-<script>
-        $(".first").click(function(){
-            window.location = $(this).find("a:first").attr("href");
-            return false;
-        });
-    
-        $(".second").click(function(){
-            window.location = $(this).find("a:first").attr("href");
-            return false;
-        });
-        $(".third").click(function(){
-            window.location = $(this).find("a:first").attr("href");
-            return false;
-        });
-        $(".fourth").click(function(){
-            window.location = $(this).find("a:first").attr("href");
-            return false;
-        });
-    </script>
+
 </html>
 
