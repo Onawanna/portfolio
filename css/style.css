@@ -248,25 +248,6 @@ a.skip-main:focus, a.skip-main:active {
     z-index:999;
 }
 
-/* The code below came from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows */
-
-/* .arrows {
-	border: solid black;
-	border-width: 0 3px 3px 0;
-	display: inline-block;
-	padding: 3px;
-  }
-
-  .up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-}
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-} */
-
 @media screen and (min-width: 800px) {
 	
 .container{
@@ -358,7 +339,7 @@ header {
 }
 
 header nav ul {
-	padding: 2%;
+	padding: 1%;
 }
 
 header nav ul li {
@@ -412,19 +393,19 @@ and (max-width: 736px) {
 	
 }
 
-/* @media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
 
 .container {
 	grid-template-columns: 1fr 1fr 1fr;
 	display: grid;
 	column-gap: 1%;
 	grid-row-gap: 1%;
-	width: 96%;
+	width: 88%;
 	position: relative;
 	justify-items: center;
 	align-items: center;
 	}
 
-} */
+}
 
 
