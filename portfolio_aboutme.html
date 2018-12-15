@@ -10,15 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fanwood+Text%7cSource+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
-	
-<script src="js/mixitup.js"></script>
-
-<script>
-	var containerEl = document.querySelector('.container');
-
-	var mixer = mixitup(containerEl);
-</script>
+		
 
 <script>
 // This code was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown 
@@ -74,9 +66,10 @@
 </div> 
  </div>
 
- <main id = "maincontent"> 
-		
+	<main id = "maincontent"> 
+		<div>
 		<h1>Fun Facts About Me </h1>
+		<div>
 	<div> 
 		<h2>I graduate soon, specifically in: </h2> <h2 id = "countdown"> Graduation Countdown</h2>
 	</div>
@@ -112,11 +105,19 @@
 	<a aria-label = "Send an email" href="mailto:mkaruu@umich.edu">   Email<i class="fas fa-envelope fa-lg"></i> </a>
 </p>
 </footer>
-	<script src="js/lightbox.js"></script>
+	
 </body>
 
 </html>
 
+<script src="js/mixitup.js"></script>
+<script src="js/lightbox.js"></script>
 
+
+<script>
+var containerEl = document.querySelector('.container');
+
+var mixer = mixitup(containerEl);
+</script>
 
 		
